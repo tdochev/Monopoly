@@ -11,12 +11,13 @@ namespace Monopoly.Models
 {
     public static class Board
     {
-        private static Tile[] tiles =
+        private static readonly ITile[] tiles =
         {
-            new Tile("Start", TileType.Chance)
+            new Tile("Start", TileType.Chance),
+            new Property("Mediterranean Avenue", TileType.Property, Color.Brown, 60)
         };
 
-        public static Tile GetTileAt(int index)
+        public static ITile GetTileAt(int index)
         {
             return tiles[index];
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Monopoly.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,17 +7,17 @@ using System.Threading.Tasks;
 
 namespace Monopoly.Contracts
 {
-    interface IPlayer
+    public interface IPlayer
     {
         string Name { get; }
 
         int Money { get; }
 
-        List<IProperty> GetProperties();
+        List<IProperty> Properties { get; }
 
         void PlayTurn();
 
-        void BuyPropery();
+        void BuyProperty(IProperty property);
 
         void SellProperty();
 

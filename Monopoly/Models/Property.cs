@@ -11,9 +11,13 @@ namespace Monopoly.Models
 {
     class Property : Tile, IProperty
     {
-        public Property(string name, TileType tileType):base(name, tileType)
+        Color color;
+        int price;
+
+        public Property(string name, TileType tileType, Color color, int price):base(name, tileType)
         {
-                
+            this.color = color;
+            this.price = price;
         }
 
         public Color Color
@@ -21,6 +25,10 @@ namespace Monopoly.Models
             get
             {
                 throw new NotImplementedException();
+            }
+            private set
+            {
+                this.color = value;
             }
         }
 
@@ -49,7 +57,11 @@ namespace Monopoly.Models
         {
             get
             {
-                throw new NotImplementedException();
+                return this.price;
+            }
+            private set
+            {
+                this.price = value;
             }
         }
 

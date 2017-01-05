@@ -43,11 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\GlobalConstants.cs" />
+    <Compile Include="Common\PropertyConstants.cs" />
     <Compile Include="Contracts\IPlayer.cs" />
     <Compile Include="Contracts\IProperty.cs" />
     <Compile Include="Contracts\ITile.cs" />
     <Compile Include="Models\Player.cs" />
-    <Compile Include="Enums\TileName.cs" />
     <Compile Include="Models\Board.cs" />
     <Compile Include="Engine\TileFactory.cs" />
     <Compile Include="Enums\Color.cs" />
@@ -61,9 +62,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Common\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

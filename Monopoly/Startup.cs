@@ -12,9 +12,14 @@ namespace Monopoly
     class Startup
     {
 
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine(Board.GetTileAt(0).Name);
+            Console.WriteLine(Board.GetTileAt(1).Name);
+            IPlayer goshoPlayer = new Player("Gosho");
+            goshoPlayer.BuyProperty((IProperty)Board.GetTileAt(1));
+            Console.WriteLine(goshoPlayer.Money);
+            Console.WriteLine(goshoPlayer.Properties[0].TileType);
+
         }
     }
 }

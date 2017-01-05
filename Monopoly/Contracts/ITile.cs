@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Monopoly.Contracts
 {
-    interface ITile
+    public interface ITile
     {
         string Name { get; }
 
