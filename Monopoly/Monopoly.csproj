@@ -43,19 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\GlobalConstants.cs" />
+    <Compile Include="Common\GameConstants.cs" />
     <Compile Include="Common\PropertyConstants.cs" />
+    <Compile Include="Common\TilesConstants.cs" />
     <Compile Include="Contracts\IPlayer.cs" />
     <Compile Include="Contracts\IProperty.cs" />
+    <Compile Include="Contracts\ISpecialProperty.cs" />
     <Compile Include="Contracts\ITile.cs" />
     <Compile Include="Models\Player.cs" />
     <Compile Include="Models\Board.cs" />
     <Compile Include="Engine\TileFactory.cs" />
     <Compile Include="Enums\Color.cs" />
-    <Compile Include="Enums\PropertyType.cs" />
     <Compile Include="Enums\TileType.cs" />
     <Compile Include="Models\Property.cs" />
+    <Compile Include="Models\SpecailProperty.cs" />
+    <Compile Include="Models\Station.cs" />
     <Compile Include="Models\Tile.cs" />
+    <Compile Include="Models\Utility.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

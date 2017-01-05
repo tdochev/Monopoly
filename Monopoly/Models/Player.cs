@@ -15,7 +15,7 @@ namespace Monopoly.Contracts
         public Player(string name)
         {
             this.properties = new List<IProperty>();
-            this.money = GlobalConstants.INITIAL_MONEY;
+            this.money = GameConstants.INITIAL_PLAYER_MONEY;
             this.Name = name;
         }
 
@@ -52,6 +52,8 @@ namespace Monopoly.Contracts
                 return new List<IProperty>(properties);
             }
         }
+
+        public bool IsInJail { get; set; }
 
         public void MortgageProperty()
         {

@@ -13,6 +13,8 @@ namespace Monopoly.Contracts
 
         int Money { get; }
 
+        bool IsInJail { get; set; }
+
         List<IProperty> Properties { get; }
 
         void PlayTurn();
@@ -22,7 +24,6 @@ namespace Monopoly.Contracts
         void SellProperty();
 
         void MortgageProperty();
-
         
     }
 }

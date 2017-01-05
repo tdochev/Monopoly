@@ -8,7 +8,7 @@ namespace Monopoly.Enums
 {
     public enum Color
     {
-        Brown,
+        DarkPurple,
         LightBlue,
         Pink,
         Orange,

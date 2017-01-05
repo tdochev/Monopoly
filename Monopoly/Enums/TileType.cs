@@ -8,6 +8,7 @@ namespace Monopoly.Enums
 {
     public enum TileType
     {
+        GO,
         Property,
         Chance,
         CommunityChest,
@@ -16,7 +17,9 @@ namespace Monopoly.Enums
         InJail,
         FreeParking,
         GoToJail,
-        SuperTax
+        SuperTax,
+        Station,
+        Utility
 
     }
 }

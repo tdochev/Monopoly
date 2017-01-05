@@ -12,11 +12,14 @@ namespace Monopoly.Models
     class Property : Tile, IProperty
     {
         Color color;
+        int mortgageValue;
         int price;
+        int rent;
 
-        public Property(string name, TileType tileType, Color color, int price):base(name, tileType)
+        public Property(string name, Color color, int price, int mortgageValue, int rent) :base(name, TileType.Property)
         {
             this.color = color;
+            this.mortgageValue = mortgageValue;
             this.price = price;
         }
 
@@ -24,7 +27,7 @@ namespace Monopoly.Models
         {
             get
             {
-                throw new NotImplementedException();
+                return this.color;
             }
             private set
             {
@@ -36,7 +39,11 @@ namespace Monopoly.Models
         {
             get
             {
-                throw new NotImplementedException();
+                return this.mortgageValue;
+            }
+            private set
+            {
+                this.mortgageValue = value;
             }
         }
 
@@ -69,7 +76,11 @@ namespace Monopoly.Models
         {
             get
             {
-                throw new NotImplementedException();
+                return this.rent;
+            }
+            private set
+            {
+                this.rent = value;
             }
         }
     }
