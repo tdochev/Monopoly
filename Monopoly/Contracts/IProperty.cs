@@ -9,10 +9,15 @@ namespace Monopoly.Contracts
 {
     interface IProperty : ITile
     {
-        int? Rent { get; }
 
-        PropertyType propertyType { get; }
+        int Price { get; }
 
-        Color color { get; }
+        int Rent { get; }
+
+        int MortgageValue { get; }
+
+        Color Color { get; }
+
+        Player Owner { get; set; }
     }
 }

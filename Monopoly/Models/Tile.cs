@@ -11,11 +11,25 @@ namespace Monopoly.Models
 {
     public class Tile : ITile
     {
+
+        private string name;
+        private TileType tileType;
+
+        public Tile(string name, TileType tileType)
+        {
+            this.Name = name;
+            this.TileType = tileType;
+        }
+
         public string Name
         {
             get
             {
-                throw new NotImplementedException();
+                return this.name;
+            }
+            private set
+            {
+                this.name = value;
             }
         }
 
@@ -23,7 +37,11 @@ namespace Monopoly.Models
         {
             get
             {
-                throw new NotImplementedException();
+                return this.tileType;
+            }
+            private set
+            {
+                this.tileType = value;
             }
         }
     }
