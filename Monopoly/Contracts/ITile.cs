@@ -11,8 +11,6 @@ namespace Monopoly.Contracts
     {
         string Name { get; }
 
-        int? Price { get; }
-
         TileType TileType { get; }
     }
 }
