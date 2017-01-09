@@ -9,7 +9,7 @@ using Monopoly.Enums;
 
 namespace Monopoly.Models
 {
-    class Property : Tile, IProperty
+    public class Property : Tile, IProperty
     {
         Color color;
         int mortgageValue;
