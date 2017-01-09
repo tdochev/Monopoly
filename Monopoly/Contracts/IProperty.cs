@@ -16,8 +16,6 @@ namespace Monopoly.Contracts
 
         int MortgageValue { get; }
 
-        Color Color { get; }
-
         Player Owner { get; set; }
     }
 }

@@ -9,30 +9,16 @@ using Monopoly.Enums;
 
 namespace Monopoly.Models
 {
-    public class Property : Tile, IProperty
+    public abstract class Property : Tile, IProperty
     {
-        Color color;
         int mortgageValue;
         int price;
         int rent;
 
-        public Property(string name, Color color, int price, int mortgageValue, int rent) :base(name, TileType.Property)
+        public Property(string name, int price, int mortgageValue, int rent) :base(name, TileType.Property)
         {
-            this.color = color;
             this.mortgageValue = mortgageValue;
             this.price = price;
-        }
-
-        public Color Color
-        {
-            get
-            {
-                return this.color;
-            }
-            private set
-            {
-                this.color = value;
-            }
         }
 
         public int MortgageValue
