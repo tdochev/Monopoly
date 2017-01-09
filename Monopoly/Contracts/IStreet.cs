@@ -1,7 +1,6 @@
-﻿using Monopoly.Contracts;
-using Monopoly.Enums;
+﻿using Monopoly.Enums;
 
-namespace Monopoly
+namespace Monopoly.Contracts
 {
 	public interface IStreet : IProperty
 	{

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 
-using Monopoly.Models;
+using Monopoly.Contracts;
 using Monopoly.Common;
 
-namespace Monopoly.Contracts
+namespace Monopoly.Models
 {
     public class Player : IPlayer
     {

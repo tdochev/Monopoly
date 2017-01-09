@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Monopoly
+namespace Monopoly.Models
 {
 	//TODO: Implement singleton
 	public class Dice

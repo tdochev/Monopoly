@@ -2,7 +2,7 @@
 using Monopoly.Enums;
 using Monopoly.Models;
 
-namespace Monopoly
+namespace Monopoly.Models
 {
 	public class Street : Property
 	{

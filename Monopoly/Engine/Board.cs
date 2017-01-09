@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using Monopoly.Models;
 using Monopoly.Contracts;
 using Monopoly.Enums;
 using Monopoly.Common;
 
-namespace Monopoly.Models
+namespace Monopoly.Engine
 {
     public static class Board
     {

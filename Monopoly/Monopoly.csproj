@@ -51,7 +51,6 @@
     <Compile Include="Contracts\ISpecialProperty.cs" />
     <Compile Include="Contracts\ITile.cs" />
     <Compile Include="Models\Player.cs" />
-    <Compile Include="Models\Board.cs" />
     <Compile Include="Engine\TileFactory.cs" />
     <Compile Include="Enums\Color.cs" />
     <Compile Include="Enums\TileType.cs" />
@@ -66,6 +65,9 @@
     <Compile Include="Contracts\IStreet.cs" />
     <Compile Include="Engine\Game.cs" />
     <Compile Include="Models\Dice.cs" />
+    <Compile Include="Contracts\ILogger.cs" />
+    <Compile Include="Engine\ConsoleLogger.cs" />
+    <Compile Include="Engine\Board.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
