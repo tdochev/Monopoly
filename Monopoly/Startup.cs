@@ -19,6 +19,10 @@ namespace Monopoly
             goshoPlayer.BuyProperty((IProperty)Board.GetTileAt(1));
             Console.WriteLine(goshoPlayer.Money);
             Console.WriteLine(goshoPlayer.Properties[0].TileType);
+			Console.WriteLine("________");
+			var dice = new Dice();
+			dice.Throw();
+			Console.WriteLine("{0}, {1}", dice.FirtDice, dice.SecondDice);
 
         }
     }

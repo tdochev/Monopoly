@@ -64,6 +64,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Street.cs" />
     <Compile Include="Contracts\IStreet.cs" />
+    <Compile Include="Engine\Game.cs" />
+    <Compile Include="Models\Dice.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
