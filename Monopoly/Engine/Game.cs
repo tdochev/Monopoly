@@ -36,8 +36,9 @@ namespace Monopoly.Engine
 				count++;
 
 				//TODO: move to global game messages
-				logger.Log(string.Format("{0} threw {1} + {2}", player.Name, dice.FirstDice, dice.SecondDice));
+				logger.Log(string.Format("{0} threw {1} + {2}.", player.Name, dice.FirstDice, dice.SecondDice));
 			}
+
 			logger.Log(Environment.NewLine);
 			int distinctCount = playersTurn.Keys.Distinct().Count();
 
