@@ -68,6 +68,7 @@
     <Compile Include="Contracts\ILogger.cs" />
     <Compile Include="Engine\ConsoleLogger.cs" />
     <Compile Include="Engine\Board.cs" />
+    <Compile Include="Contracts\IDice.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

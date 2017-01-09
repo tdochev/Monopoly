@@ -2,7 +2,7 @@
 namespace Monopoly.Models
 {
 	//TODO: Implement singleton
-	public class Dice
+	public class Dice : IDice
 	{
 		private int firstDice;
 		private int secondDice;
@@ -14,11 +14,11 @@ namespace Monopoly.Models
 		public void Throw()
 		{
 			var rnd = new Random();
-			this.FirtDice = rnd.Next(1, 7);
+			this.FirstDice = rnd.Next(1, 7);
 			this.SecondDice = rnd.Next(1, 7);
 		}
 
-		public int FirtDice
+		public int FirstDice
 		{
 			get 
 			{
@@ -37,7 +37,7 @@ namespace Monopoly.Models
 			{
 				return this.secondDice;
 			}
-			set 
+			private set 
 			{
 				ValidateDice(value);
 				this.secondDice = value;

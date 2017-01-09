@@ -39,7 +39,7 @@ namespace Monopoly.Models
             }
         }
 
-        public void BuyProperty(IProperty property)
+		public void BuyProperty(IProperty property)
         {
             this.money -= property.Price;
             this.properties.Add(property);
@@ -60,7 +60,7 @@ namespace Monopoly.Models
             throw new NotImplementedException();
         }
 
-        public void PlayTurn()
+		public void PlayTurn()
         {
             throw new NotImplementedException();
         }
@@ -69,5 +69,10 @@ namespace Monopoly.Models
         {
             throw new NotImplementedException();
         }
+
+		public void ThrowDice(IDice dice)
+		{
+			dice.Throw();
+		}
     }
 }

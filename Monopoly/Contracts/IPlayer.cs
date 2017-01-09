@@ -19,6 +19,8 @@ namespace Monopoly.Contracts
         void SellProperty();
 
         void MortgageProperty();
+
+		void ThrowDice(IDice dice);
         
     }
 }

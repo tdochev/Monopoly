@@ -11,9 +11,9 @@ namespace Monopoly.Engine
 		{
 		}
 
-		public void Log(string message)
+		public void Log(object message)
 		{
-			Console.WriteLine(message);
+			Console.WriteLine(message.ToString());
 		}
 	}
 }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Monopoly.Contracts;
+using Monopoly.Engine;
 using Monopoly.Models;
 
 namespace Monopoly
@@ -14,16 +15,17 @@ namespace Monopoly
 
         static void Main()
         {
-            Console.WriteLine(Board.GetTileAt(1).Name);
+			var players = new List<IPlayer>();
             IPlayer goshoPlayer = new Player("Gosho");
-            goshoPlayer.BuyProperty((IProperty)Board.GetTileAt(1));
-            Console.WriteLine(goshoPlayer.Money);
-            Console.WriteLine(goshoPlayer.Properties[0].TileType);
-			Console.WriteLine("________");
-			var dice = new Dice();
-			dice.Throw();
-			Console.WriteLine("{0}, {1}", dice.FirtDice, dice.SecondDice);
+			IPlayer peshoPlayer = new Player("Pesho");
+			players.Add(goshoPlayer);
+			players.Add(peshoPlayer);
 
+			IDice dice = new Dice();
+			ILogger logger = new ConsoleLogger();
+
+			var game = new Game(dice,logger,players);
+			game.Start();
         }
     }
 }
